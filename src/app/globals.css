@@ -50,7 +50,7 @@
              blink 0.7s steps(2, start) infinite;
   white-space: nowrap; /* Evita que o texto quebre linha */
   overflow: hidden;     /* Esconde o texto fora da área visível */
-  border-right: 2px solid var(--foreground); /* Simula o cursor piscante */
+  border-right: 2px solid var(--foreground); /* Simula o cursor piscando */
 }
 
 @media (prefers-color-scheme: dark) {
