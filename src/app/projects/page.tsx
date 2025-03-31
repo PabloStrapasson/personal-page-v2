@@ -1,4 +1,5 @@
-import React from 'react'
+import Project from '@/components/project/project';
+import ProjectTecnologie from '@/components/project/project-tecnologies';
 
 type Project = {
   _id: string;
@@ -18,7 +19,7 @@ async function getProjects() {
 export default async function Projects() {
 
   const projects = await getProjects()
-  // console.log(projects)
+  
   return (
     <div className="flex items-center justify-center min-h-screen pt-20 px-2 pb-20 gap-12 md:pt-28 lg:px-20 lg:py-0 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center justify-center sm:items-start snap-y snap-mandatory">
@@ -30,6 +31,27 @@ export default async function Projects() {
               <li key={project._id}>{project.name} {project._id}</li>
             ))}
           </ul>
+          
+          <div className='w-full flex'>
+            {projects.map((project: Project) => (
+              project.tecnologies.map((tecnology: string) => (
+                <ProjectTecnologie key={tecnology} name={tecnology} />
+            ))))}
+          </div>
+
+          <br />
+
+          <div className='flex'>
+            {projects.map((project: Project) => (
+              <Project key={project._id}
+                title={project.name}
+                description={project.description}
+                tecnologies={project.tecnologies}
+                deployUrl={project.deploy_url}
+                repositoryUrl={project.git_repository}  
+              />
+            ))}
+          </div>
         </section>
             
       </main>
