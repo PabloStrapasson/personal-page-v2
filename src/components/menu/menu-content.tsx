@@ -8,7 +8,7 @@ export default function MenuContent() {
       > Projetos &raquo; 
       </Link>
                 
-      <Link href='/#my_certifications' 
+      <Link href='/certifications' 
             className='mr-1.5 md:mr-5 relative after:content-[""] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-px after:bg-sea-salt after:transition-[width] after:ease-in-out after:duration-300 hover:after:w-full'
       > Certificações &raquo; 
       </Link>
