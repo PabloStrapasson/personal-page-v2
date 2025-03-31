@@ -12,7 +12,7 @@ export default function About() {
           </div> 
           */}
           
-          <p className='my-4 text-[13px] md:text-[16px] lg:text-[20px]'> Sou Bacharel em Ciências da Computação pela Universidade Federal de Santa Catarina e sou apaixonado por desenvolvimento web. Este é meu site pessoal e aqui você poderá conhecer um pouco mais sobre mim e os projetos que já desenvolvi!</p>
+          <p className='my-4 text-[14px] md:text-[16px] lg:text-[20px]'> Sou Bacharel em Ciências da Computação pela Universidade Federal de Santa Catarina e sou apaixonado por desenvolvimento web. Este é meu site pessoal e aqui você poderá conhecer um pouco mais sobre mim e os projetos que já desenvolvi!</p>
       </div>
     )
 }
