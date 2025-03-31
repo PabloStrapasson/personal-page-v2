@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function MenuContent() {
   return (
     <nav className='hidden md:flex'>
-      <Link href='/#my_projects' 
+      <Link href='/projects' 
             className='mr-1.5 md:mr-5 relative after:content-[""] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-px after:bg-sea-salt after:transition-[width] after:ease-in-out after:duration-300 hover:after:w-full'
       > Projetos &raquo; 
       </Link>

@@ -1,5 +1,6 @@
-import Icon from "@/components/icon";
 import MenuContent from "@/components/menu/menu-content";
+import MenuContact from "@/components/menu/menu-contact";
+import ButtonMenu from "@/components/menu/button-menu";
 
 export default function Menu() { 
   
@@ -9,19 +10,17 @@ export default function Menu() {
 
             <MenuContent/>
               
-            <div className='hidden md:flex items-end content-start w-auto text-sea-salt'>
-              <Icon src={'icons/linkedin-white.svg'} alt={'linkedin'} href={'https://www.linkedin.com/in/pablo-strapasson/'} title={'Linkedin'}/>
-              <Icon src={'icons/github-white.svg'} alt={'linkedin'} href={"https://github.com/PabloStrapasson"} title={"GitHub"}/>
-              <p className='mx-2 lg:mx-4'>pablostrapasson98@gmail.com</p>
-            </div>
+            <MenuContact/>
 
-            <div className='flex md:hidden items-end justify-between w-full text-sea-salt'>
+            <ButtonMenu/>
+
+            {/* <div className='flex md:hidden items-end justify-between w-full text-sea-salt'>
               <div className='flex'>
                 <Icon src={'icons/linkedin-white.svg'} alt={'linkedin'} href={'https://www.linkedin.com/in/pablo-strapasson/'} title={'Linkedin'}/>
                 <Icon src={'icons/github-white.svg'} alt={'linkedin'} href={"https://github.com/PabloStrapasson"} title={"GitHub"}/>
               </div>
               <p className='mx-1'>pablostrapasson98@gmail.com</p>
-            </div>
+            </div> */}
           </nav>
       </header>
     )
