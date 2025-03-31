@@ -1,6 +1,6 @@
 import MenuContent from "@/components/menu/menu-content";
 import MenuContact from "@/components/menu/menu-contact";
-import ButtonMenu from "@/components/menu/button-menu";
+import ButtonMenu from "@/components/menu/menu-button";
 
 export default function Menu() { 
   
