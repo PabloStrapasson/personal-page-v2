@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import Button from '../button';
-import ProjectTecnologie from './project-tecnologies';
+import Button from '@/components/button';
+import ProjectTecnologie from '@/components/project/project-tecnologies';
 
 interface ProjectProps {
     title: string;
@@ -13,8 +13,11 @@ interface ProjectProps {
 
 export default function Project({ title, image_name, description, tecnologies, deployUrl, repositoryUrl }: ProjectProps) {
   return (
-    <div className='bg-[#ebebeb] shadow-md dark:bg-oxford-blue block w-[350px] h-auto px-4 items-center justify-center rounded-lg'>
-        <div className='w-full flex items-center justify-center p-2 font-bold text-[18px]'>
+    <div className='w-[250px] h-auto bg-[#ebebeb] shadow-md dark:bg-oxford-blue block px-4 items-center justify-center rounded-lg
+                    lg:w-[350px]'>
+        <div className='w-full flex items-center justify-center p-2 font-bold text-[14px]
+                        md:text-[16px]
+                        lg:text-[18px]'>
             <h1>{title}</h1>
         </div>
         
@@ -32,7 +35,7 @@ export default function Project({ title, image_name, description, tecnologies, d
         </div>
         
         <div className='w-full h-[190px] py-2'>
-            <p>{description}</p>
+            <p className='text-justify text-[14px] lg:text-[16px]'>{description}</p>
         </div>
         
         <div className='flex w-full h-auto py-2 justify-end items-center'>

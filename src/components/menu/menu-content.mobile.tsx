@@ -3,13 +3,13 @@ import Link from "next/link";
 export default function MenuContentMobile() {
   return (
     <nav className='flex flex-col text-[14px]'>
-      <Link href='/projects' 
-            className='py-2 border-b-[0.5px] border-b-[#454545] '
+      <Link href='/#projects' 
+            className='py-2 border-b-[0.5px] border-b-onyx'
       > Projetos &raquo; 
       </Link>
                 
-      <Link href='/certifications' 
-            className='py-2 border-b-[0.5px] border-b-[#454545]'
+      <Link href='/#certifications' 
+            className='py-2 border-b-[0.5px] border-b-onyx'
       > Certificações &raquo; 
       </Link>
                 
