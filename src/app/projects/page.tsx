@@ -1,5 +1,4 @@
 import Project from '@/components/project/project';
-import ProjectTecnologie from '@/components/project/project-tecnologies';
 
 type Project = {
   _id: string;
@@ -27,19 +26,7 @@ export default async function Projects() {
         
         <section id='my_certifications' className='snap-start w-full flex flex-col justify-center'>
           <h1> Projects </h1>
-          <ul>
-            {projects.map((project: Project) => (
-              <li key={project._id}>{project.name} {project._id}</li>
-            ))}
-          </ul>
           
-          <div className='w-full flex'>
-            {projects.map((project: Project) => (
-              project.tecnologies.map((tecnology: string) => (
-                <ProjectTecnologie key={tecnology} name={tecnology} />
-            ))))}
-          </div>
-
           <br />
 
           <div className='grid grid-cols-2 gap-4 '>
