@@ -8,6 +8,7 @@ type Project = {
   git_repository: string;
   description: string;
   deploy_url?: string;
+  image_name: string;
 }
 
 async function getProjects() {
@@ -41,7 +42,7 @@ export default async function Projects() {
 
           <br />
 
-          <div className='flex'>
+          <div className='grid grid-cols-2 gap-4 '>
             {projects.map((project: Project) => (
               <Project key={project._id}
                 title={project.name}
@@ -49,6 +50,7 @@ export default async function Projects() {
                 tecnologies={project.tecnologies}
                 deployUrl={project.deploy_url}
                 repositoryUrl={project.git_repository}  
+                image_name={project.image_name}
               />
             ))}
           </div>
