@@ -24,7 +24,7 @@ export default async function ProjectsSection() {
     <div className='w-full flex flex-col justify-center items-center mb-5'>
         <div className='w-full px-5 mb-5 flex 
                         md:p-5'>
-            <h1 className='text-[14px] font-bold md:text-[18px] lg:text-[30px]'> Aqui estão alguns dos meus principais projetos: </h1>
+            <h1 className='text-[16px] font-bold md:text-[18px] lg:text-[30px]'> Aqui estão alguns dos meus principais projetos: </h1>
         </div>
         
         <div className='grid grid-cols-1 gap-10

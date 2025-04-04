@@ -23,7 +23,7 @@ export default async function CertificationsSection() {
   return (
     <div className='w-full flex flex-col justify-center items-center mb-5 md:mb-10 lg:mb-25 xl:mb-40'>
         <div className='w-full px-5 mb-5 flex md:p-5'>
-            <h1 className='text-[14px] font-bold md:text-[18px] lg:text-[30px]'> Cursos e Certificações: </h1>
+            <h1 className='text-[16px] font-bold md:text-[18px] lg:text-[30px]'> Cursos e Certificações: </h1>
         </div>
 
         <div className='hidden
