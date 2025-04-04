@@ -11,7 +11,7 @@ type Project = {
 }
   
 async function getProjects() {
-  const response = await fetch(`${process.env.BASE_URL}/api/projects`, { method: 'GET' });
+  const response = await fetch(`${process.env.API_URL}/project`, { method: 'GET' });
   const projects = await response.json();
   return projects;
 }

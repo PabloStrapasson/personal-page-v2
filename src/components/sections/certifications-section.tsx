@@ -11,7 +11,7 @@ type Certification = {
 }
   
 async function getCertifications() {
-  const response = await fetch(`${process.env.BASE_URL}/api/certifications`, { method: 'GET' });
+  const response = await fetch(`${process.env.API_URL}/certification`, { method: 'GET' });
   const certifications = await response.json();
   return certifications;
 }
