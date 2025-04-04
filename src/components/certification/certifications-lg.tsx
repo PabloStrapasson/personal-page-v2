@@ -10,7 +10,7 @@ interface CertificationProps {
   certificate_link: string;
 }
 
-export default function CertificationLg({ title, workload, conclusion_date, description, certificate_link }: CertificationProps) {
+export default function CertificationLg({ title, description, certificate_link }: CertificationProps) {
   return (
     <div className='bg-[#ebebeb] shadow-md dark:bg-oxford-blue flex w-[600px] h-auto px-4 items-center justify-center rounded-lg'>
             
