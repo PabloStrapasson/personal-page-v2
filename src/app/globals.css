@@ -3,7 +3,6 @@
 :root {
   --background: #F6F6F6;
   --foreground: #171717;
-  --color-black: #000000;
   --color-rich-black: #0C1821;
   --color-oxford-blue: #1c4a91;
   --color-charcoal: #324A5F;
@@ -21,9 +20,10 @@
   --color-charcoal: #324A5F;
   --color-blue: #1c4a91;
   --color-sea-salt: #F6F6F6;
+  --color-onyx: #454545;
 
-  --text-sm: 0.625rem;
-  --text-md: 0.8rem;
+  --text-sm: 0.875rem;
+  --text-md: 0.875rem;
   --text-lg: 1rem;
 }
 

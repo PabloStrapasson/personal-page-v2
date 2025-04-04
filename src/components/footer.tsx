@@ -3,7 +3,9 @@ import Icon from "./icon";
 
 export default function Footer() {
   return (
-    <footer className='w-full h-35 md:h-40 lg:h-50 bg-rich-black flex flex-col py-5 lg:py-6 items-center justify-between text-sea-salt text-sm md:text-md lg:text-lg'>
+    <footer className='w-full h-35 bg-rich-black flex flex-col py-5 items-center justify-between text-sea-salt text-sm dark:border-t-1 dark:border-onyx
+                       md:text-md md:h-40 
+                       lg:text-lg lg:h-50 lg:py-6'>
       <nav className='flex flex-col justify-between w-[85%] items-start'>
 
         <div className='flex items-center my-1'>
