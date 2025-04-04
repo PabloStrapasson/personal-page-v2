@@ -14,13 +14,6 @@ export default function Menu() {
 
             <ButtonMenu/>
 
-            {/* <div className='flex md:hidden items-end justify-between w-full text-sea-salt'>
-              <div className='flex'>
-                <Icon src={'icons/linkedin-white.svg'} alt={'linkedin'} href={'https://www.linkedin.com/in/pablo-strapasson/'} title={'Linkedin'}/>
-                <Icon src={'icons/github-white.svg'} alt={'linkedin'} href={"https://github.com/PabloStrapasson"} title={"GitHub"}/>
-              </div>
-              <p className='mx-1'>pablostrapasson98@gmail.com</p>
-            </div> */}
           </nav>
       </header>
     )

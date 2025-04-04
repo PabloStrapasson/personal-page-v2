@@ -6,7 +6,6 @@ import CertificationsSection from '@/components/sections/certifications-section'
 export default async function Home() {
 
   return (
-    // grid grid-rows-[20px_1fr_20px] items-center justify-center min-h-screen py-8 px-2 lg:px-20 pb-20 gap-12 sm:p-20 font-[family-name:var(--font-geist-sans)]
     <div className="flex items-center justify-center min-h-screen pt-20 px-2 pb-20 gap-12 md:pt-28 lg:px-20 lg:py-0 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center justify-center sm:items-start snap-y snap-mandatory">
         
@@ -18,17 +17,11 @@ export default async function Home() {
           <TecnologiesSection/>
         </section>
 
-        <br id="projects"/>
-        <br />
-
-        <section id='my_projects' className='snap-start w-full'>
+        <section id='projects' className='snap-start w-full'>
           <ProjectsSection/>
         </section>
 
-        <br id="certifications"/>
-        <br />
-
-        <section id='my_certifications' className='snap-start w-full'>
+        <section id='certifications' className='snap-start w-full'>
           <CertificationsSection/>
         </section>
         
